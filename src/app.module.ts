@@ -21,7 +21,7 @@ import { OrdersModule } from './orders/orders.module';
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
       autoLoadEntities: true,
-      synchronize: true, // Set to false in production
+      synchronize: false, 
     }),
     UsersModule,
     AuthanticationModule,

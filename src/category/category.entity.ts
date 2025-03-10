@@ -7,17 +7,17 @@ export enum UserRole {
   USER = 'user',
 }
 
-@Entity('users')
-export class Users {
+@Entity('categories')
+export class Category {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
-  name: string;
+  @Column({ nullable: false, type: 'varchar'})
+  name!: string;
 
   @Column({ unique: true })
   description: string;
-  
+
   @IsOptional()
   @Column()
   image: string;

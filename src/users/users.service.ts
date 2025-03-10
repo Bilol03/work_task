@@ -1,8 +1,7 @@
-import { Injectable, Param } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { UpdateUserDto, Users } from './users.entity'; // Ensure correct path
-import { agent } from 'supertest';
+import { Users } from './users.entity';
 
 @Injectable()
 export class UsersService {
